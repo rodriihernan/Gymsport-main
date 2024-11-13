@@ -8,6 +8,30 @@ body {
     height: 100vh;
 }
 
+/* El contenedor del logo puede tener estilos adicionales si es necesario */
+.header {
+    position: center;
+    width: 5%;
+}
+
+/* Logo ubicado en la esquina superior izquierda */
+.logo {
+    display: block;
+    width: 270px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 170px;
+    background-image: url("../Imagenes/logo\ gym-Photoroom.png");
+    background-size: contain; /* Asegura que el logo se ajuste sin distorsionarse */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Posiciona el logo en la esquina superior izquierda */
+    position: fixed; /* Cambiado a 'fixed' para que permanezca en la esquina */
+    top: 0; /* Alinea el logo al borde superior */
+    left: 0; /* Alinea el logo al borde izquierdo */
+    margin: 100px; /* Añade un pequeño margen desde los bordes */
+    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+}
+
 .form-container {
     background-color: #2e8331a2;
     padding: 40px;
