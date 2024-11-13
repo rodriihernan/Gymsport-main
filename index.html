@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Sport Gym</title>
+    <!-- Vincula el archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="css/Imagenes/logo-gym.png">
+</head>
+
+<body>
+    <!-- Título -->
+    <h1 class="title">Sport GYM</h1>
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Acceder</button>
+            <hr>
+            <button type="submit">Si no estas registrado, <a href="Formulario de registro.html"> registrate </button></a>
+        </form>
+        <div id="login-message"></div>
+    </div>
+
+    <hr>
+
+    <!-- Menú de navegación -->
+    <div class="menu">
+        <a href="#reservas">Reservas</a>
+        <a href="#mis-reservas">Mis Reservas</a>
+        <a href="#mis-pagos">Mis Pagos</a>
+        <a href="#mis-datos">Mis Datos</a>
+    </div>
+
+    <hr>
+
+    <!-- Sección de Reservas -->
+    <div class="content" id="reservas">
+        <h2>Reservas</h2>
+        <form id="reservar-form">
+            <label for="clase">Selecciona una clase:</label>
+            <select id="clase" name="clase">
+                <option value="gimnasio">Musculación</option>
+                <option value="crossfit">Crossfit</option>
+                <option value="gap">GAP</option>
+                <option value="boxeo">Boxeo</option>
+            </select>
+
+            <label for="hora">Selecciona una hora:</label>
+            <select id="hora" name="hora">
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+            </select>
+
+            <button type="submit">Reservar</button>
+        </form>
+        <div id="mensaje-reserva"></div>
+    </div>
+
+    <!-- Sección de Mis Reservas -->
+    <div class="content" id="mis-reservas">
+        <h2>Mis Reservas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Clase</th>
+                    <th>Hora</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-reservas">
+                <!-- Aquí se llenarán las reservas -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección de Mis Pagos -->
+    <div class="content" id="mis-pagos">
+        <h2>Mis Pagos</h2>
+        <p id="estado-pago">Estado del pago: Pendiente</p>
+        <p id="monto-mensual">Mensualidad: $15.000</p>
+    </div>
+
+    <!-- Sección de Mis Datos -->
+    <div class="content" id="mis-datos">
+        <h2>Mis Datos</h2>
+        <form id="datos-form">
+            <label for="id">N° Cliente:</label>
+            <input type="text" id="id" name="id" value="12345" readonly>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" value="12345678">
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" value="usuario@example.com">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="Juan">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" value="Pérez">
+
+            <button type="submit">Actualizar Datos</button>
+        </form>
+    </div>
+
+    <footer>
+        <h4>Contactenos</h4>
+        <p>Teléfono: 4698-2753</p>
+        <p>Dirección: Amapolas 1550</p>
+        <h4>Redes</h4>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.x.com">X</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+
