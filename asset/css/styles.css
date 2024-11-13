@@ -1,6 +1,6 @@
 /* Estilo para el fondo de pantalla */
 body {
-    background-image: url("Imagenes/ejercicios-basicos-de-gimnasio.webp");
+    background-image: url("../Imagenes/ejercicios-basicos-de-gimnasio.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
